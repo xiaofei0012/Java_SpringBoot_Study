@@ -22,6 +22,7 @@ import java.util.HashMap;
 @Controller
 public class UserController {
 
+
     @Resource
     UserService userService;
 
@@ -38,6 +39,7 @@ public class UserController {
                     .orderByAsc("id");
             model.addAttribute("user", userService.list(wrapper));
             System.out.println("user = " + user);
+            System.out.println("登录成功！");
             return "index";
         } else {
             return "login";

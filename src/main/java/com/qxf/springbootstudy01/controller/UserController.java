@@ -41,8 +41,8 @@ public class UserController {
             System.out.println("user = " + user);
             System.out.println("登录成功！");
             System.out.println("登录失败！");
-            System.out.println("hot fix 第一次修改！");
             System.out.println("hot fix 第二次修改！");
+            System.out.println("hot fix 第一次修改！");
             return "index";
         } else {
             return "login";

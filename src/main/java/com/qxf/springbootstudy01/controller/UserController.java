@@ -40,6 +40,7 @@ public class UserController {
             model.addAttribute("user", userService.list(wrapper));
             System.out.println("user = " + user);
             System.out.println("登录成功！");
+            System.out.println("登录失败！");
             return "index";
         } else {
             return "login";
